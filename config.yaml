@@ -5,12 +5,6 @@ lookup:
   nve: { table: waterbody, key: name }
 links: []
 languages:
+  - ['sv_SE', 'Svenska']
   - ['nb_NO', 'Norsk']
-oauth:
-  github:
-    text: github-login
-    url: https://github.com/login/oauth/authorize?scope=user:email&client_id=%s
-    tokenurl: https://github.com/login/oauth/access_token
-    authurl: https://api.github.com/user
-    id: <your client id>
-    secret: <your client secret>
+oauth: {}
