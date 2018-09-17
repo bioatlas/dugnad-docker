@@ -8,7 +8,7 @@ init:
 		https://github.com/mskyttner/dugnad
 	cp requirements.txt config.yaml dugnad
 	cp dugnad-Makefile dugnad/Makefile
-#	cp plan.yaml dugnad/projects/plan.yaml
+	cp plan.yaml dugnad/projects/plan.yaml
 
 build: 
 	docker build --tag bioatlas/dugnad:latest .
@@ -22,6 +22,7 @@ up:
 	docker run --name dugnad -d \
 		-p 8080:8080 -v $(PWD)/data:/code/data \
 		bioatlas/dugnad:latest
+	-docker exec -it dugnad bash -c 'scripts/pdf2dzi.sh /code/data/plan.pdf /code/static/plan'
 	docker logs -f dugnad &
 
 test:
