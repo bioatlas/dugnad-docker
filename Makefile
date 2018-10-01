@@ -1,4 +1,4 @@
-DUGNAD_VERSION := 0.1.1
+DUGNAD_VERSION := 0.1.2
 
 PWD := $(shell pwd)
 
