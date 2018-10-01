@@ -2,8 +2,8 @@ FROM python:2-alpine3.8
 
 # build vips with pdf support from source
 
-ARG VIPS_VERSION=8.6.3
-ARG VIPS_URL=https://github.com/jcupitt/libvips/releases/download
+ARG VIPS_VERSION=8.7.0
+ARG VIPS_URL=https://github.com/libvips/libvips/releases/download
 
 RUN apk update && apk add --no-cache \
 	bash gettext \
