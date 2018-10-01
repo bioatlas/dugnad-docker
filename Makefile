@@ -30,7 +30,7 @@ up:
 	docker logs -f dugnad &
 
 test:
-	firefox http://localhost:8080/ & 
+	xdg-open http://localhost:8080/ & 
 
 clean:
 	docker stop dugnad
