@@ -18,6 +18,7 @@ RUN apk update && apk add --no-cache \
     tiff-dev \
     glib-dev \
     gdk-pixbuf-dev \
+    sqlite \
     sqlite-dev \
     libjpeg-turbo-dev \
     libexif-dev \
