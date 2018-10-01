@@ -1,4 +1,4 @@
-DUGNAD_VERSION := 0.1
+DUGNAD_VERSION := 0.1.1
 
 PWD := $(shell pwd)
 
@@ -11,7 +11,6 @@ init:
 		tar xzf v${DUGNAD_VERSION}.tar.gz && mv dugnad-${DUGNAD_VERSION} dugnad && \
 		rm v${DUGNAD_VERSION}.tar.gz)
 	cp requirements.txt config.yaml dugnad
-	cp dugnad-Makefile dugnad/Makefile
 	cp plan.yaml dugnad/projects/plan.yaml
 
 build: 
